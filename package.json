@@ -1,0 +1,13 @@
+{
+  "name": "momo",
+  "version": "0.1.0",
+  "main": "target/js/compiled/main.js",
+  "devDependencies": {
+    "ws": "^3.0.0",
+    "electron-prebuilt": "latest"
+  },
+  "dependencies": {
+    "express": "latest",
+    "mkdirp": "latest"
+  }
+}
