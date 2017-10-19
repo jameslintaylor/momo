@@ -12,6 +12,9 @@ pom.xml
 .repl
 .nrepl-port
 
+# MacOS
+.DS_Store
+
 # EMACS
 *~
 \#*\#

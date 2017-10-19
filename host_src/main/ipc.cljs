@@ -7,8 +7,12 @@
 (.on ipcMain "show-file-explorer"
      (fn [event arg]
        (print "wow!")
-       (.showOpenDialog dialog
-                        (clj->js {:properties ["openDirectory"]}))
-       #_(-> event
-           .-sender
-           (.send :show-file-explorer "I got your message boo"))))
+       (.showOpenDialog
+        dialog
+        (clj->js {:properties ["openDirectory"]})
+        (fn [dirs]
+          (print (js->clj dirs))))
+       
+       #_(-> Eventpc
+             .-sender
+             (.send :show-file-explorer "I got your message boo"))))
